@@ -39,7 +39,7 @@ public class DbInitializer(IGenericRepo genericRepository) : IDbInitializer
                 Password = Password.HashSecret("Admin@123"),
                 RoleId = adminRole.Id,
                 ContactNo = "+977 9803364638",
-                ImageURL = null
+                ImagePath = null
             };
 
             genericRepository.Add(superAdminUser);
